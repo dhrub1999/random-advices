@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap");
+
+$lightCyan: hsl(193, 38%, 86%);
+$neonGreen: hsl(150, 100%, 66%);
+$grayishBlue: hsl(217, 19%, 38%);
+$darkGrayishBlue: hsl(217, 19%, 24%);
+$darkBlue: hsl(218, 23%, 16%);
+$fontSize: 28px;
+$fontFamily: "Manrope", sans-serif;
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 0 1em;
+  background: $darkBlue;
+}
+
+.container {
+  font-family: $fontFamily;
+  color: $lightCyan;
+  width: clamp(300px, 100%, 450px);
+
+  .advise-container {
+    position: relative;
+    padding: 2em 1em;
+    background: $darkGrayishBlue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    border-radius: 10px;
+    box-shadow: -1px 1px 5px $darkGrayishBlue;
+
+    .advise-no {
+      display: block;
+      p {
+        text-align: center;
+        font-size: 12px;
+        line-height: 16px;
+        color: $neonGreen;
+        letter-spacing: 3px;
+      }
+    }
+
+    .advise {
+        text-align: center;
+        font-size: 16px;
+        line-height: 24px;
+        width: 100%;
+    }
+
+    .svg-container {
+        margin: .5em 0 1em 0;
+    }
+
+    .btn-container {
+        position: absolute;
+        bottom: 0%;
+        transform: translateY(50%);
+
+        .cta {
+            background: $neonGreen;
+            padding: 1.2rem;
+            font-size: 10px;
+            outline: none;
+            border: none;
+            border-radius: 50%;
+            cursor: pointer;
+            transition: .3s ease;
+
+            &:hover {
+                box-shadow: 0px 0px 20px $neonGreen;
+            }
+
+            img {
+                height: 20px;
+                width: 20px;
+            }
+        }
+    }
+  }
+}
+
+@media (min-width: 375px) {
+
+    .container {
+        .advise-container {
+            padding: 2em 5em;
+        }
+    }
+
+}

@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap");
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  padding: 0 1em;
+  background: #1f2632;
+}
+
+.container {
+  font-family: "Manrope", sans-serif;
+  color: #cee3e9;
+  width: clamp(300px, 100%, 450px);
+}
+
+.container .advise-container {
+  position: relative;
+  padding: 2em 1em;
+  background: #323a49;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem;
+  border-radius: 10px;
+  -webkit-box-shadow: -1px 1px 5px #323a49;
+          box-shadow: -1px 1px 5px #323a49;
+}
+
+.container .advise-container .advise-no {
+  display: block;
+}
+
+.container .advise-container .advise-no p {
+  text-align: center;
+  font-size: 12px;
+  line-height: 16px;
+  color: #52ffa8;
+  letter-spacing: 3px;
+}
+
+.container .advise-container .advise {
+  text-align: center;
+  font-size: 16px;
+  line-height: 24px;
+  width: 100%;
+}
+
+.container .advise-container .svg-container {
+  margin: .5em 0 1em 0;
+}
+
+.container .advise-container .btn-container {
+  position: absolute;
+  bottom: 0%;
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
+}
+
+.container .advise-container .btn-container .cta {
+  background: #52ffa8;
+  padding: 1.2rem;
+  font-size: 10px;
+  outline: none;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+}
+
+.container .advise-container .btn-container .cta:hover {
+  -webkit-box-shadow: 0px 0px 20px #52ffa8;
+          box-shadow: 0px 0px 20px #52ffa8;
+}
+
+.container .advise-container .btn-container .cta img {
+  height: 20px;
+  width: 20px;
+}
+
+@media (min-width: 375px) {
+  .container .advise-container {
+    padding: 2em 5em;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
